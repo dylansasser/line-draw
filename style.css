@@ -1,0 +1,21 @@
+.draw { /* Target the path with class "draw"*/
+  stroke-dasharray: var(--stroke-length);
+  stroke-dashoffset: var(--stroke-length);
+  animation: dash 2s ease-in-out forwards;
+  animation-direction: forwards;
+}
+
+.draw:hover {
+  stroke-dasharray: var(--stroke-length);
+  stroke-dashoffset: var(--stroke-length);
+  animation: dash 2s ease-in-out infinite;
+  animation-direction: forwards;
+
+
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 100;
+  }
+}
